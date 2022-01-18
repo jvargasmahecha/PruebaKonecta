@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-01-2022 a las 04:19:47
+-- Tiempo de generación: 18-01-2022 a las 15:57:04
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -31,7 +31,7 @@ CREATE TABLE `categoria` (
   `CT_Id` int(11) NOT NULL,
   `CT_Nombre` varchar(255) NOT NULL,
   `CT_Fecha_Creacion` date NOT NULL
-) ENGINE=InnoDB ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `categoria`
@@ -56,7 +56,15 @@ CREATE TABLE `ordenes` (
   `PD_Id` int(11) NOT NULL,
   `OR_Fecha_Creacion` date NOT NULL,
   `OR_Cantidad` int(11) NOT NULL
-) ENGINE=InnoDB ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `ordenes`
+--
+
+INSERT INTO `ordenes` (`OR_Id`, `PD_Id`, `OR_Fecha_Creacion`, `OR_Cantidad`) VALUES
+(11, 64, '0000-00-00', 100),
+(12, 64, '0000-00-00', 20);
 
 -- --------------------------------------------------------
 
@@ -73,7 +81,7 @@ CREATE TABLE `productos` (
   `PD_Stock` int(11) NOT NULL,
   `categoria` int(11) NOT NULL,
   `PD_Fecha_Creacion` date NOT NULL
-) ENGINE=InnoDB ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `productos`
@@ -81,7 +89,9 @@ CREATE TABLE `productos` (
 
 INSERT INTO `productos` (`PD_Id`, `PD_Nombre`, `PD_Referencia`, `PD_Precio`, `PD_Peso`, `PD_Stock`, `categoria`, `PD_Fecha_Creacion`) VALUES
 (57, 'Yogurt', 'YG', 20000, 1000, 5, 2, '2022-01-17'),
-(58, 'test', 'test', 5000, 500, 999, 5, '2022-01-17');
+(58, 'cocacola', 'CC', 5000, 250, 99, 6, '2022-01-17'),
+(62, 'Pan de queso ', 'PQ', 2000, 200, 8, 1, '2022-01-18'),
+(64, 'Pepsi', 'PS', 3000, 250, 30, 6, '2022-01-18');
 
 --
 -- Índices para tablas volcadas
@@ -119,13 +129,13 @@ ALTER TABLE `categoria`
 -- AUTO_INCREMENT de la tabla `ordenes`
 --
 ALTER TABLE `ordenes`
-  MODIFY `OR_Id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `OR_Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `PD_Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `PD_Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
