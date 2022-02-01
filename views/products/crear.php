@@ -54,7 +54,7 @@
 
       </div>
 
-      <input name="" id="" class="btn btn-primary width-100" type="submit" value="Agregar Producto">
+      <input  class="btn btn-primary width-100" type="submit" value="Agregar Producto">
       <a href="?controller=products&accion=inicio" style="margin-left: 15px" class="btn btn-danger">Cancelar</a>
 
     </form>

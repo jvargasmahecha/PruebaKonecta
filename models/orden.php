@@ -21,7 +21,7 @@ class Orden{
         $sql->execute(array($OR_Cantidad, $PD_Id));
     }
 
-    public static function validarStock($PD_Id, $OR_Cantidad){
+    /*public static function validarStock($PD_Id, $OR_Cantidad){
         $conexionBD=BD::crearInstancia();
         echo "<script>console.log('Debug Objects: " . $PD_Id . "' );</script>";
         $sql=$conexionBD->query("SELECT `PD_Stock` FROM `productos` WHERE PD_Id=?");
@@ -32,6 +32,6 @@ class Orden{
         }else{
             return false;
         }
-    }    
+    } */   
 }
 ?>

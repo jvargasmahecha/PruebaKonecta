@@ -10,8 +10,11 @@
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.js" type="text/javascript"></script>
     <script  src="js/hora.js"></script>
     <script  src="js/carrito.js"></script>
+    <script  src="js/paginacion.js"></script>    
   </head>
   <body>
       <nav class="navbar navbar-expand navbar-light bg-light ">
@@ -21,15 +24,13 @@
               <a class="nav-item nav-link" href="?controller=orden&accion=crear"><h5>Comprar</h5></a>
               <a class="nav-item nav-link" href="?controller=pages&accion=nosotros"><h5>Contacto</h5></a>              
               <a class="nav-item nav-link" ><h5 id="HoraActual"></h5></a>  
-          </div>      
-          
+          </div>    
       </nav>
       <div class="container">
           <div class="row">
               <div class="col-xs|sm|md|lg|xl-1-12">
                   <?php include_once("ruteador.php")?>
-              </div>
-              
+              </div>              
           </div>
       </div>
     <!-- Bootstrap JavaScript Libraries -->

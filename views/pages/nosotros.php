@@ -22,9 +22,9 @@
                 <img class="mx-auto rounded-circle" width="140" height="130" src="img/foto.jpg" />
                 <h4>Juan David Vargas</h4>
                 <p class="text-muted">Desarrollador Web</p>
-                <a href="https://wa.me/573504867501"><img src="img/ws.png" alt="logo fb" style="width:42px;height:42px;"></a>
-                <a href="https://www.facebook.com/profile.php?id=100006273252135"><img src="img/fb.png" alt="logo fb" style="width:42px;height:42px;"></a>
-                <a href="https://www.linkedin.com/in/juan-david-vargas-b52a681a8/"><img src="img/in.png" alt="logo fb" style="width:42px;height:42px;"></a>
+                <a href="https://wa.me/573504867501" target="_blanck"><img title="WhatsApp" src="img/ws.png" alt="logo ws" style="width:42px;height:42px;"></a>
+                <a href="https://www.facebook.com/profile.php?id=100006273252135" target="_blanck"><img title="Facebook" src="img/fb.png" alt="logo fb" style="width:42px;height:42px;"></a>
+                <a href="https://www.linkedin.com/in/juan-david-vargas-b52a681a8/" target="_blanck"><img title="Linkedin" src="img/in.png" alt="logo LK" style="width:42px;height:42px;"></a>
                 <hr class="my-2">
             </div>
         </div>
